@@ -1,0 +1,31 @@
+@apiurl = http://localhost:3000
+
+###
+GET  {{apiurl}}/livros
+
+###
+GET  {{apiurl}}/livros/1
+
+###
+POST {{apiurl}}/livros/create
+Content-Type: application/json
+
+{
+    "codigo":"LIV0120",
+    "nome":"Livro L",
+    "preco":19.9   
+}
+
+###
+DELETE {{apiurl}}/livros/10
+
+###
+PUT {{apiurl}}/livros
+Content-Type: application/json
+
+{
+    "id": "2",
+    "codigo":"LIV0120",
+    "nome":"Livro Alterado",
+    "preco":19.9   
+}
